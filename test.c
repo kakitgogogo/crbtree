@@ -15,8 +15,7 @@ struct item2
 
 void handler(struct node* n)
 {
-	struct item* item = container_of(n, struct item, node);
-	printf("%d ", item->node.key);
+	printf("%d ", container_of(n, struct item, node)->node.key);
 }
 
 int main()
