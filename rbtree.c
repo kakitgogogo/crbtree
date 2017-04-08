@@ -349,8 +349,8 @@ void rbtree_erase(struct rbtree* tree, struct node* z)
 					break;
 				}
 			}
-			if(x) x->color = BLACK;
 		}
+		if(x) x->color = BLACK;
 	}
 }
 
